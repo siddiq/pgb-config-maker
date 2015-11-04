@@ -29,6 +29,17 @@ if (!fs.existsSync(pgbResources)) {
 	fs.mkdirSync(pgbResources);
 }
 
+// For some reason android and wp8 directories are not created by mkdirp. So adding them manually.
+if (!fs.existsSync(pgbResources + '/ios')) {
+	fs.mkdirSync(pgbResources + '/ios');
+}
+if (!fs.existsSync(pgbResources + '/android')) {
+	fs.mkdirSync(pgbResources + '/android');
+}
+if (!fs.existsSync(pgbResources + '/wp8')) {
+	fs.mkdirSync(pgbResources + '/wp8');
+}
+
 // Make new config.xml in www/
 fs.writeFileSync(config, fs.readFileSync(ionicConfig));
 var xml = fs.readFileSync(config, 'utf-8');
