@@ -1,0 +1,14 @@
+{
+    "name": "pgb-config-maker",
+    "author": "Siddiq Akbar",
+    "url": "https://github.com/siddiq/pgb-config-maker/",
+    "version": "0.1.19",
+    "description": "Automatically generates www/config.xml to be used by PhoneGap build using the existing Ionic's config.xml",
+    "dependencies": {
+        "mkdirp": "^0.5.1"
+    },
+    "scripts": {
+        "postinstall": "scripts/install.sh",
+        "uninstall": "scripts/uninstall.sh"
+    }
+}
