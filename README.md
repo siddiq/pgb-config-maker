@@ -2,6 +2,12 @@
 - Automatically converts Ionic's config.xml to PhoneGap Build's www/config.xml (So that you can do: phonegap remote build ios)
 - Automatically copies icons and splashes inside www/pgb-resources and update paths in www/config.xml
 
+
+<p align="center">
+  <img src ="https://raw.githubusercontent.com/siddiq/pgb-config-maker/master/doc/assets/pgb-config-maker.png" />
+</p>
+
+
 How to use
 ----------
 
